@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
-import { Router, browserHistory, Route, Link} from 'react-router';
+import { Router, browserHistory, Route} from 'react-router';
 // import logo from './logo.svg';
-import './App.css';
+import './Studios.css';
 
 const Page = ({ title }) => (
     <div className="App">
-      <div className="App-header"> 
-      <p>
-        <Link to="/time">Go to time table</Link>
-      </p>
+      <div className="App-header">
         <h2>{title}</h2>
         <p className="App-intro">
           Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standart dummy text ever
@@ -140,7 +137,7 @@ const Page = ({ title }) => (
     </div>
 );
 
-const Home = (props) => (
+const Studios = (props) => (
   <Page title="Studios"/>
 );
 
@@ -152,11 +149,11 @@ const Settings = (props) => (
   <Page title="Settings"/>
 );
 
-class App extends Component {
+class Studios extends Component {
   render() {
     return (
       <Router history={browserHistory}>
-        <Route path="/" component={Home}/>
+        <Route path="/" component={Studios}/>
         <Route path="/about" component={About}/>
         <Route path="/settings" component={Settings}/>
       </Router>
@@ -164,4 +161,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Studios;

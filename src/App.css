@@ -1,7 +1,6 @@
 .App {
   text-align: center;
-  height: 100vh;
-  background-image: linear-gradient(#f19da7, #ffcfae);
+  height: auto;
 }
 
 /* .App-logo {
@@ -15,15 +14,22 @@
   }
 } */
 
+.App-intro {
+  color: #ffffff;
+}
+
 .App-header {
   /* background-color: #282c34; */
-  min-height: 20vh;
+  background-image: linear-gradient(#f19da7, #ffcfae);
+  min-height: 26vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding-top: 4vh;
+  clip-path: ellipse(70vh 37vh at 28vh -5vh);
 }
 
 .App-link {
@@ -37,4 +43,191 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+/* studios class */
+.studios p {
+  color: #f19da7;
+  float: left;
+  margin-left: 30px;
+}
+
+.studios div {
+  width: 50%;
+  display: inline-block;
+}
+
+.studios img {
+  float: right;
+  margin-right: 30px;
+  margin-bottom: 16px;
+}
+
+/* buttons class */
+
+.buttons {
+  text-align: left;
+}
+
+.btn_normal {
+  display: inline-flex;
+  border-radius: 2vh;
+  border: none;
+  height: 4vh;
+  color: white;
+  font-size: large;
+  margin: 1vh 1vh 1vh 1vh;
+}
+
+.btn_normal span {
+  margin: auto auto auto auto;
+}
+
+.btn_purple {
+  background-image: linear-gradient(to right, #9a71d7, #5b42bb);
+}
+
+.btn_blue {
+  background-image: linear-gradient(to right, #7884fc, #6da4f3);
+}
+
+.btn_yellow {
+  background-image: linear-gradient(to right, #fca27e, #ffc80f);
+}
+
+.btn_w_16 {
+  width: 16vh;
+}
+
+.btn_w_8 {
+  width: 8vh;
+}
+
+.btn_w_24 {
+  width: 24vh;
+}
+
+/* individual studio classes */
+
+.studio {
+  height: 50vh;
+}
+
+.studio_img {
+  width: 100%;
+  height: 30vh;
+  background-color: #f19da7;
+}
+
+.btn_circle {
+  width: 4vh;
+  height: 4vh;
+}
+
+.btn_green {
+  background-image: linear-gradient(to right, #49d195, #4dd671);
+}
+
+.btn_pink {
+  background-image: linear-gradient(to right, #e6a6a3, #fcc6ac);
+}
+
+.btns_ver button {
+  display: block;
+}
+
+.btns_ver {
+  float: right;
+  margin-right: 2vh;
+  margin-top: -2vh;
+}
+
+.btn_order {
+  height: 6vh;
+  width: 15vh;
+  border-radius: 3vh 0 0 3vh;
+  float: right;
+  margin-top: 40%;
+  margin-right: -8vh;
+}
+
+.studio h2 {
+  margin-bottom: 0;
+}
+
+/* contact info */
+
+.sm_info_pink {
+  width: 3.5vh;
+  height: 3.5vh;
+  border-radius: 1.75vh;
+  background-color: #e6a6a3;
+  color: white;
+}
+
+.sm_info_pink span {
+  margin: auto auto auto auto;
+}
+
+.contact_info p {
+  display: inline-block;
+  color: #e6a6a3;
+}
+
+.contact_info button {
+  display: inline-block;
+}
+
+.contact_info {
+  float: left;
+  margin-left: 3vh;
+}
+
+.contact {
+  width: 50%;
+  display: block;
+}
+
+.heart_image {
+  width: 8vh;
+  height: 8vh;
+  background-color: white;
+  float: right;
+  margin-top: -9.6vh;
+  color: #e6a6a3;
+}
+
+/* footer class */
+
+.footer {
+  width: 100%;
+  height: 10.5vh;
+  background-color: #5e647c;
+  padding-top: 2vh;
+}
+
+.footer > div div {
+  display: inline-block;
+}
+
+.footer_icon {
+  width: 8vh;
+  height: 8vh;
+  color: white;
+  margin-left: 1vh;
+  margin-right: 1vh;
+}
+
+.footer_icon p {
+  margin-top: 0;
+}
+
+.bottom_bar {
+  width: 35%;
+  height: 1vh;
+  background-color: white;
+  border-radius: 0.5vh;
+  margin-left: auto;
+  margin-right: auto;
 }
