@@ -3,6 +3,25 @@
   height: auto;
 }
 
+.links {
+  position: absolute;
+  z-index: 100;
+}
+
+.links p {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+}
+
+.links a:hover {
+  color: lightgray;
+}
+
 /* .App-logo {
   height: 20vmin;
   pointer-events: none;
@@ -21,7 +40,7 @@
 .App-header {
   /* background-color: #282c34; */
   background-image: linear-gradient(#f19da7, #ffcfae);
-  min-height: 26vh;
+  min-height: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,7 +48,7 @@
   font-size: calc(10px + 2vmin);
   color: white;
   padding-top: 4vh;
-  clip-path: ellipse(70vh 37vh at 28vh -5vh);
+  clip-path: ellipse(70vh 35vh at 24vh 0vh);
 }
 
 .App-link {
@@ -44,7 +63,6 @@
     transform: rotate(360deg);
   }
 }
-
 
 /* studios class */
 .studios p {
@@ -230,4 +248,802 @@
   border-radius: 0.5vh;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* responsive design */
+@media only screen and (min-width: 330px) and (max-width: 360px) {
+  /* App header */
+  .App-header {
+    height: 35vh;
+    clip-path: ellipse(70vh 40vh at 27vh 0vh);
+  }
+
+  h2 {
+    margin-top: 5vh;
+    margin-bottom: 1vh;
+    font-size: 4vh;
+  }
+  .App-intro {
+    font-size: 3vh;
+  }
+
+  /* studio header */
+
+  .btn_normal {
+    font-size: medium;
+    height: 6vh;
+    border-radius: 3vh;
+  }
+
+  .btn_w_16 {
+    width: 24vh;
+  }
+
+  .btn_w_8 {
+    width: 12vh;
+  }
+
+  .btn_w_24 {
+    width: 36vh;
+  }
+
+  .btn_circle {
+    width: 4vh;
+    height: 4vh;
+  }
+
+  .btns_ver {
+    margin-top: -5vh;
+  }
+
+  .btn_order {
+    height: 8vh;
+    width: 15vh;
+    border-radius: 4vh 0 0 4vh;
+    float: right;
+    margin-top: 27vh;
+    margin-right: -8vh;
+  }
+
+  .studio {
+    height: 60vh;
+  }
+
+  .studio_img {
+    width: 100%;
+    height: 37vh;
+    background-color: #f19da7;
+  }
+
+  .studio h2 {
+    margin-bottom: 0;
+    font-size: 15px !important;
+    margin-left: 10px;
+    float: left;
+  }
+
+  /* contact info */
+
+  .sm_info_pink {
+    width: 3.5vh;
+    height: 3.5vh;
+    border-radius: 1.75vh;
+    float: left;
+    margin-top: 3vh;
+    margin-bottom: 0px !important;
+    background-color: #e6a6a3;
+    color: white;
+  }
+
+  .sm_info_pink span {
+    margin: auto auto auto auto;
+  }
+
+  .contact_info p {
+    display: inline-block;
+    color: #e6a6a3;
+  }
+
+  .contact_info button {
+    display: inline-block;
+  }
+
+  .contact_info {
+    float: left;
+    margin-left: 3vh;
+    height: 6vh !important;
+  }
+
+  .contact {
+    width: 80%;
+    display: block;
+  }
+
+  .heart_image {
+    width: 8vh;
+    height: 8vh;
+    background-color: white;
+    float: right;
+    margin-top: -9.6vh;
+    color: #e6a6a3;
+  }
+
+  /* footer class */
+
+  .footer {
+    width: 100%;
+    height: 10.5vh;
+    background-color: #5e647c;
+    padding-top: 2vh;
+  }
+
+  .footer > div div {
+    display: inline-block;
+  }
+
+  .footer_icon {
+    width: 8vh;
+    height: 8vh;
+    color: white;
+    margin-left: 1vh;
+    margin-right: 1vh;
+  }
+
+  .footer_icon p {
+    margin-top: 0;
+  }
+
+  .bottom_bar {
+    width: 35%;
+    height: 1vh;
+    background-color: white;
+    border-radius: 0.5vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* responsive design */
+@media only screen and (min-width: 310px) and (max-width: 330px) {
+  /* App header */
+  .App-header {
+    height: 35vh;
+    clip-path: ellipse(70vh 40vh at 27vh 0vh);
+  }
+
+  h2 {
+    margin-top: 5vh;
+    margin-bottom: 1vh;
+    font-size: 4vh;
+  }
+  .App-intro {
+    font-size: 3vh;
+  }
+
+  /* studio header */
+
+  .btn_normal {
+    font-size: medium;
+    height: 6vh;
+    border-radius: 3vh;
+  }
+
+  .btn_w_16 {
+    width: 24vh;
+  }
+
+  .btn_w_8 {
+    width: 12vh;
+  }
+
+  .btn_w_24 {
+    width: 36vh;
+  }
+
+  .btn_circle {
+    width: 4vh;
+    height: 4vh;
+  }
+
+  .btns_ver {
+    margin-top: -5vh;
+  }
+
+  .btn_order {
+    height: 8vh;
+    width: 15vh;
+    border-radius: 4vh 0 0 4vh;
+    float: right;
+    margin-top: 23vh;
+    margin-right: -8vh;
+  }
+
+  .studio {
+    height: 60vh;
+  }
+
+  .studio_img {
+    width: 100%;
+    height: 37vh;
+    background-color: #f19da7;
+  }
+
+  .studio h2 {
+    margin-bottom: 0;
+    font-size: 15px !important;
+    margin-left: 10px;
+    float: left;
+  }
+
+  /* contact info */
+
+  .sm_info_pink {
+    width: 3.5vh;
+    height: 3.5vh;
+    border-radius: 1.75vh;
+    float: left;
+    margin-top: 3vh;
+    margin-bottom: 0px !important;
+    background-color: #e6a6a3;
+    color: white;
+  }
+
+  .sm_info_pink span {
+    margin: auto auto auto auto;
+  }
+
+  .contact_info p {
+    display: inline-block;
+    color: #e6a6a3;
+  }
+
+  .contact_info button {
+    display: inline-block;
+  }
+
+  .contact_info {
+    float: left;
+    margin-left: 3vh;
+    height: 6vh !important;
+  }
+
+  .contact {
+    width: 80%;
+    display: block;
+  }
+
+  .heart_image {
+    width: 8vh;
+    height: 8vh;
+    background-color: white;
+    float: right;
+    margin-top: -9.6vh;
+    color: #e6a6a3;
+  }
+
+  /* footer class */
+
+  .footer {
+    width: 100%;
+    height: 10.5vh;
+    background-color: #5e647c;
+    padding-top: 2vh;
+  }
+
+  .footer > div div {
+    display: inline-block;
+  }
+
+  .footer_icon {
+    width: 8vh;
+    height: 8vh;
+    color: white;
+    margin-left: 1vh;
+    margin-right: 1vh;
+  }
+
+  .footer_icon p {
+    margin-top: 0;
+  }
+
+  .bottom_bar {
+    width: 35%;
+    height: 1vh;
+    background-color: white;
+    border-radius: 0.5vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* responsive design */
+@media only screen and (min-width: 380px) and (max-width: 480px) {
+  /* App header */
+  .App-header {
+    height: 35vh;
+    clip-path: ellipse(70vh 40vh at 27vh 0vh);
+  }
+
+  h2 {
+    margin-top: 5vh;
+    margin-bottom: 1vh;
+    font-size: 4vh;
+  }
+  .App-intro {
+    font-size: 3vh;
+  }
+
+  /* studio header */
+
+  .btn_circle {
+    width: 4vh;
+    height: 4vh;
+  }
+
+  .btns_ver {
+    margin-top: 0vh;
+  }
+
+  .btn_order {
+    height: 8vh;
+    width: 15vh;
+    border-radius: 4vh 0 0 4vh;
+    float: right;
+    margin-top: 28vh;
+    margin-right: -8vh;
+  }
+
+  .studio {
+    height: 60vh;
+  }
+
+  .studio_img {
+    width: 100%;
+    height: 37vh;
+    background-color: #f19da7;
+  }
+
+  .studio h2 {
+    margin-bottom: 0;
+    font-size: 20px !important;
+    margin-left: 10px;
+    float: left;
+  }
+
+  /* contact info */
+
+  .sm_info_pink {
+    width: 3.5vh;
+    height: 3.5vh;
+    border-radius: 1.75vh;
+    float: left;
+    margin-top: 2vh;
+    background-color: #e6a6a3;
+    color: white;
+  }
+
+  .sm_info_pink span {
+    margin: auto auto auto auto;
+  }
+
+  .contact_info p {
+    display: inline-block;
+    color: #e6a6a3;
+  }
+
+  .contact_info button {
+    display: inline-block;
+  }
+
+  .contact_info {
+    float: left;
+    margin-left: 3vh;
+    height: 6vh !important;
+  }
+
+  .contact {
+    width: 80%;
+    display: block;
+  }
+
+  .heart_image {
+    width: 8vh;
+    height: 8vh;
+    background-color: white;
+    float: right;
+    margin-top: -9.6vh;
+    color: #e6a6a3;
+  }
+
+  /* footer class */
+
+  .footer {
+    width: 100%;
+    height: 10.5vh;
+    background-color: #5e647c;
+    padding-top: 2vh;
+  }
+
+  .footer > div div {
+    display: inline-block;
+  }
+
+  .footer_icon {
+    width: 8vh;
+    height: 8vh;
+    color: white;
+    margin-left: 0.5vh;
+    margin-right: 0.5vh;
+  }
+
+  .footer_icon p {
+    margin-top: 0;
+  }
+
+  .bottom_bar {
+    width: 35%;
+    height: 1vh;
+    background-color: white;
+    border-radius: 0.5vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 380px) {
+  /* App header */
+  .App-header {
+    height: 35vh;
+    clip-path: ellipse(70vh 40vh at 23vh 0vh);
+  }
+
+  h2 {
+    margin-top: 0vh;
+    margin-bottom: 1vh;
+    font-size: 4vh;
+  }
+  .App-intro {
+    font-size: 3vh;
+  }
+
+  /* studio header */
+
+  .btn_circle {
+    width: 4vh;
+    height: 4vh;
+  }
+
+  .btns_ver {
+    margin-top: 0vh;
+  }
+
+  .btn_order {
+    height: 8vh;
+    width: 15vh;
+    border-radius: 4vh 0 0 4vh;
+    float: right;
+    margin-top: 28vh;
+    margin-right: -8vh;
+  }
+
+  .studio {
+    height: 60vh;
+  }
+
+  .studio_img {
+    width: 100%;
+    height: 37vh;
+    background-color: #f19da7;
+  }
+
+  .studio h2 {
+    margin-bottom: 0;
+    font-size: 20px !important;
+    margin-left: 10px;
+    float: left;
+  }
+
+  /* contact info */
+
+  .sm_info_pink {
+    width: 3.5vh;
+    height: 3.5vh;
+    border-radius: 1.75vh;
+    float: left;
+    margin-top: 2vh;
+    background-color: #e6a6a3;
+    color: white;
+  }
+
+  .sm_info_pink span {
+    margin: auto auto auto auto;
+  }
+
+  .contact_info p {
+    display: inline-block;
+    color: #e6a6a3;
+  }
+
+  .contact_info button {
+    display: inline-block;
+  }
+
+  .contact_info {
+    float: left;
+    margin-left: 3vh;
+    height: 6vh !important;
+  }
+
+  .contact {
+    width: 80%;
+    display: block;
+  }
+
+  .heart_image {
+    width: 8vh;
+    height: 8vh;
+    background-color: white;
+    float: right;
+    margin-top: -9.6vh;
+    color: #e6a6a3;
+  }
+
+  /* footer class */
+
+  .footer {
+    width: 100%;
+    height: 10.5vh;
+    background-color: #5e647c;
+    padding-top: 2vh;
+  }
+
+  .footer > div div {
+    display: inline-block;
+  }
+
+  .footer_icon {
+    width: 8vh;
+    height: 8vh;
+    color: white;
+    margin-left: 0.5vh;
+    margin-right: 0.5vh;
+  }
+
+  .footer_icon p {
+    margin-top: 0;
+  }
+
+  .bottom_bar {
+    width: 35%;
+    height: 1vh;
+    background-color: white;
+    border-radius: 0.5vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (min-width: 760px) and (max-width: 960px) {
+  /* App header */
+  .App-header {
+    height: 35vh;
+    clip-path: ellipse(70vh 40vh at 36vh 0vh);
+  }
+
+  h2 {
+    margin-top: 0vh;
+    margin-bottom: 1vh;
+    font-size: 4vh;
+  }
+  .App-intro {
+    font-size: 3vh;
+  }
+
+  /* studio header */
+
+  .btn_circle {
+    width: 4vh;
+    height: 4vh;
+  }
+
+  .btns_ver {
+    margin-top: 0vh;
+  }
+
+  .btn_order {
+    height: 8vh;
+    width: 15vh;
+    border-radius: 4vh 0 0 4vh;
+    float: right;
+    margin-top: 28vh;
+    margin-right: -8vh;
+  }
+
+  .studio {
+    height: 60vh;
+  }
+
+  .studio_img {
+    width: 100%;
+    height: 37vh;
+    background-color: #f19da7;
+  }
+
+  .studio h2 {
+    margin-bottom: 0;
+    font-size: 20px !important;
+    margin-left: 10px;
+    float: left;
+  }
+
+  /* contact info */
+
+  .sm_info_pink span {
+    margin: auto auto auto auto;
+  }
+
+  .contact_info p {
+    display: inline-block;
+    color: #e6a6a3;
+  }
+
+  .contact_info button {
+    display: inline-block;
+  }
+
+  .heart_image {
+    width: 8vh;
+    height: 8vh;
+    background-color: white;
+    float: right;
+    margin-top: -5vh;
+    color: #e6a6a3;
+  }
+
+  /* footer class */
+
+  .footer {
+    width: 100%;
+    height: 10.5vh;
+    background-color: #5e647c;
+    padding-top: 2vh;
+  }
+
+  .footer > div div {
+    display: inline-block;
+  }
+
+  .footer_icon {
+    width: 8vh;
+    height: 8vh;
+    color: white;
+    margin-left: 0.5vh;
+    margin-right: 0.5vh;
+  }
+
+  .footer_icon p {
+    margin-top: 0;
+  }
+
+  .bottom_bar {
+    width: 35%;
+    height: 1vh;
+    background-color: white;
+    border-radius: 0.5vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  /* App header */
+  .App-header {
+    height: 35vh;
+    clip-path: ellipse(70vh 40vh at 36vh 0vh);
+  }
+
+  h2 {
+    margin-top: 0vh;
+    margin-bottom: 1vh;
+    font-size: 4vh;
+  }
+  .App-intro {
+    font-size: 3vh;
+  }
+
+  /* studio header */
+
+  .btn_circle {
+    width: 4vh;
+    height: 4vh;
+  }
+
+  .btns_ver {
+    margin-top: 0vh;
+  }
+
+  .btn_order {
+    height: 8vh;
+    width: 15vh;
+    border-radius: 4vh 0 0 4vh;
+    float: right;
+    margin-top: 30vh;
+    margin-right: -8vh;
+  }
+
+  .studio {
+    height: 60vh;
+  }
+
+  .studio_img {
+    width: 100%;
+    height: 37vh;
+    background-color: #f19da7;
+  }
+
+  .studio h2 {
+    margin-bottom: 0;
+    font-size: 20px !important;
+    margin-left: 10px;
+    float: left;
+  }
+
+  /* contact info */
+
+  .sm_info_pink span {
+    margin: auto auto auto auto;
+  }
+
+  .contact_info p {
+    display: inline-block;
+    color: #e6a6a3;
+  }
+
+  .contact_info button {
+    display: inline-block;
+  }
+
+  .heart_image {
+    width: 8vh;
+    height: 8vh;
+    background-color: white;
+    float: right;
+    margin-top: 3vh;
+    margin-right: -15vh;
+    color: #e6a6a3;
+  }
+
+  /* footer class */
+
+  .footer {
+    width: 100%;
+    height: 10.5vh;
+    background-color: #5e647c;
+    padding-top: 2vh;
+  }
+
+  .footer > div div {
+    display: inline-block;
+  }
+
+  .footer_icon {
+    width: 8vh;
+    height: 8vh;
+    color: white;
+    margin-left: 0.5vh;
+    margin-right: 0.5vh;
+  }
+
+  .footer_icon p {
+    margin-top: 0;
+  }
+
+  .bottom_bar {
+    width: 35%;
+    height: 1vh;
+    background-color: white;
+    border-radius: 0.5vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
